@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Yaroslav Kolodiy">
 
     <title>Ana & Yaroslav</title>
 
@@ -20,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="css/main.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -51,17 +51,27 @@
             <ul class="nav navbar-nav">
                 <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                 <li>
-                    <a class="page-scroll" href="#page-top">Início</a>
+                    <a class="page-scroll" href="#page-top" data-i18n="start">Start</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#sobre">Save the Date!</a>
+                    <a class="page-scroll" href="#savethedate" data-i18n="savethedate">Save the Date!</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#venue">Local</a>
+                    <a class="page-scroll" href="#venue" data-i18n="venue">Local</a>
                 </li>
 
                 <li>
-                    <a class="page-scroll" href="#rsvp">Confirmação</a>
+                    <a class="page-scroll" href="#rsvp" data-i18n="rsvp">Confirmation</a>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-toggle" data-toggle="dropdown" data-i18n="language"
+                         style="padding: 15px; font-size: 14px">
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html" onclick="changeLanguage('en')">🇬🇧 English</a></li>
+                        <li><a href="index.html" onclick="changeLanguage('ua')">🇺🇦 Українська</a></li>
+                        <li><a href="index.html" onclick="changeLanguage('pt')">🇵🇹 Português</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -76,8 +86,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <h1 class="brand-heading">Ana&nbsp;&&nbsp;Yaroslav</h1>
-                    <a href="#sobre" class="btn btn-circle page-scroll">
+                    <h1 class="brand-heading" data-i18n="welcome_message">Ana & Yaroslav</h1>
+                    <a href="#about" class="btn btn-circle page-scroll">
                         <i class="fa fa-angle-double-down animated"></i>
                     </a>
                 </div>
@@ -87,13 +97,14 @@
 </header>
 
 <!-- About Section -->
-<section id="sobre" class="container content-section text-center">
+<section id="about" class="container content-section text-center">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
-            <h1>Vamos nos casar!</h1>
-            <p>
-                É com imensa alegria e amor que te convidamos a celebrar connosco a felicidade de unir as nossas vidas
-                em casamento.</p>
+            <br>
+            <br>
+            <h1 data-i18n="we_are_going_to_marry">Let's get married!</h1>
+            <p data-i18n="we_are_going_to_marry_text">It is with immense joy and love that we invite you to celebrate
+                with us the happiness of uniting our lives in married.</p>
             <br>
             <br>
         </div>
@@ -105,16 +116,16 @@
     <div class="container">
         <div class="col-lg-8 col-lg-offset-2 savethedate-content">
             <div class="row">
-                <h1>Save the date!</h1>
-                <h3>22 de Fevereiro de 2025</h3>
+                <h1 data-i18n="savethedate">Save the date!</h1>
+                <h3 data-i18n="date_time">22nd February 2025</h3>
             </div>
             <div class="row calendar" style="display: grid; place-items: center">
                 <add-to-calendar-button
-                        name="Wedding Ana and Yaroslav"
+                        name="Wedding Ana and Yaroslav ⛪"
                         description="Wedding Ana and Yaroslav"
                         startDate="2025-02-22"
                         startTime="13:30"
-                        endDate="2025-02-24"
+                        endDate="2025-02-23"
                         endTime="05:00"
                         timeZone="Europe/Lisbon"
                         location="Igreja Matriz de Terrugem, 7350 Terrugem, Portugal"
@@ -124,7 +135,7 @@
                         buttonStyle="round"
                         size="8"
                         lightMode="system"
-                        language="pt"
+                        language="en"
                 ></add-to-calendar-button>
             </div>
         </div>
@@ -150,38 +161,37 @@
     </div>
 </section>
 
-<!-- Gifts Section -->
+<!-- Location Section -->
 <div class="gray-bg">
     <section id="venue" class="container content-section text-center">
-
         <div class="row">
             <div>
-                <h1>Local</h1>
-
+                <br>
+                <br>
+                <h1 data-i18n="venue">Local</h1>
                 <div class="container info-table">
-
                     <div class="col-sm-6 col-lg-5 col-lg-offset-1">
                         <div class="row info-heading">
                             <div class="col-sm-12">
-                                <h3>Ceremônia</h3>
+                                <h3 data-i18n="ceremony">Ceremony</h3>
                             </div>
                         </div>
                         <div class="row info-row">
-                            <div class="col-sm-4"><span class="bold">Local:</span></div>
+                            <div class="col-sm-4"><span class="bold" data-i18n="venue_info">Local:</span></div>
                             <div class="col-sm-8"><span
                                     class="">Igreja Matriz de Terrugem</span></div>
                         </div>
                         <div class="row info-row">
-                            <div class="col-sm-4"><span class="bold">Horário:</span></div>
+                            <div class="col-sm-4"><span class="bold" data-i18n="time">Time:</span></div>
                             <div class="col-sm-8"><span class="">13:30</span></div>
                         </div>
                         <div class="row info-row">
-                            <div class="col-sm-4"><span class="bold">Endereço:</span></div>
+                            <div class="col-sm-4"><span class="bold" data-i18n="place">Address:</span></div>
                             <div class="col-sm-8"><span
                                     class="">Igreja Matriz de Terrugem, 7350 Terrugem, Portugal</span></div>
                         </div>
                         <div class="row info-row">
-                            <div class="col-sm-4"><span class="bold">Direçōes:</span></div>
+                            <div class="col-sm-4"><span class="bold" data-i18n="directions">Directions:</span></div>
                             <div class="col-sm-8"><span class=""><a target="_blank"
                                                                     href="https://maps.app.goo.gl/1XNtg5GgV6bkXVzq7">Maps</a></span>
                             </div>
@@ -195,28 +205,27 @@
                             Larger Map</a></small>
                         </div>
                     </div>
-
                     <div class="col-sm-6 col-lg-5">
                         <div class="row info-heading">
                             <div class="col-sm-12">
-                                <h3>Recepção</h3>
+                                <h3 data-i18n="reception">Reception</h3>
                             </div>
                         </div>
                         <div class="row info-row">
-                            <div class="col-sm-4"><span class="bold">Local:</span></div>
+                            <div class="col-sm-4"><span class="bold" data-i18n="venue_info">Place:</span></div>
                             <div class="col-sm-8"><span class="">Quinta dos Pavões</span>
                             </div>
                         </div>
                         <div class="row info-row">
-                            <div class="col-sm-4"><span class="bold">Horário:</span></div>
+                            <div class="col-sm-4"><span class="bold" data-i18n="time">Time:</span></div>
                             <div class="col-sm-8"><span class="">16:30</span></div>
                         </div>
                         <div class="row info-row">
-                            <div class="col-sm-4"><span class="bold">Endereço:</span></div>
+                            <div class="col-sm-4"><span class="bold" data-i18n="place">Address:</span></div>
                             <div class="col-sm-8"><span class="">Quinta dos Pavões, Campo Maior, Portugal</span></div>
                         </div>
                         <div class="row info-row">
-                            <div class="col-sm-4"><span class="bold">Direçōes:</span></div>
+                            <div class="col-sm-4"><span class="bold" data-i18n="directions">Directions:</span></div>
                             <div class="col-sm-8"><span class=""><a target="_blank"
                                                                     href="https://maps.app.goo.gl/oqBaaHog1rqBRhyD7">Maps</a></span>
                             </div>
@@ -230,9 +239,9 @@
                             Larger Map</a></small>
                         </div>
                     </div>
-
                 </div>
             </div>
+        </div>
     </section>
 </div>
 
@@ -243,10 +252,10 @@
             <div class="container info-table">
                 <div class="col-lg-10 col-lg-offset-1">
                     <div class="row">
-                        <h1>Confirmação de Presença</h1>
-                        <p>
-                            Solicitamos que confirme a sua presença com os noivos por telefone ou
-                            WhatsApp até o dia 15 de dezembro.
+                        <h1 data-i18n="confirmation">Attendance confirmation</h1>
+                        <p data-i18n="confirmation_info">
+                            We ask that you confirm your presence with the bride and groom by phone or
+                            WhatsApp until December 15th.
                         </p>
                     </div>
                 </div>
@@ -258,7 +267,7 @@
 <!-- Footer -->
 <footer>
     <div class="container text-center">
-        <p>Site feito por Yaroslav Kolodiy.</p>
+        <p data-i18n="dev_info">💻 Website developed by Yaroslav Kolodiy!</p>
     </div>
 </footer>
 
@@ -273,6 +282,7 @@
 
 <!-- Theme JavaScript -->
 <script src="js/main.min.js"></script>
+<script src="js/language.js"></script>
 
 <script src="vendor/photoset-grid/js/jquery.colorbox.js"></script>
 <link rel="stylesheet" href="vendor/photoset-grid/css/colorbox.css"/>

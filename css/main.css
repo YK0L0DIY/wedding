@@ -1,8 +1,3 @@
-/*!
- * Ana & Yaroslav - Ana & Yaroslav v3.3.7+1 (http://github.com/Yaroslav/AnaeYaroslav)
- * Copyright 2017 - 2017 Yaroslav Santos
- * Licensed under MIT (https://github.com/Yaroslav/AnaeYaroslav/blob/gh-pages/LICENSE)
- */
 @import url('https://fonts.googleapis.com/css?family=Alex+Brush');
 
 h1,
@@ -158,6 +153,10 @@ a:focus {
     color: #823C2A;
 }
 
+.dropdown-toggle {
+    color: #823C2A;
+}
+
 .navbar-custom .nav li a {
     -webkit-transition: background 0.3s ease-in-out;
     -moz-transition: background 0.3s ease-in-out;
@@ -199,6 +198,10 @@ a:focus {
         color: white;
     }
 
+    .dropdown-toggle {
+       color: white;
+    }
+
     .navbar-custom.top-nav-collapse {
         padding: 0;
         background: white;
@@ -207,6 +210,10 @@ a:focus {
     }
 
     .navbar-custom.top-nav-collapse a {
+        color: #823C2A;
+    }
+
+    .navbar-custom.top-nav-collapse .dropdown-toggle {
         color: #823C2A;
     }
 
@@ -222,7 +229,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: white;
-    background: url(../img/pedra-do-sal.jpeg) no-repeat bottom center scroll;
+    background: url(../img/fundo.jpg) no-repeat top center scroll;
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -338,9 +345,9 @@ a:focus {
 
 .savethedate-section {
     width: 100%;
-    padding: 50px 0;
-    color: #000;
-    background: url(../img/pre-wedding-coqueiro-bw.jpeg) no-repeat center center scroll;
+    padding: 250px 0;
+    color: #fff;
+    background: url(../img/pre-wedding-coqueiro-bw.jpg) center center no-repeat #000;
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;

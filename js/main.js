@@ -1,9 +1,3 @@
-/*!
- * Ana & Yaroslav (http://github.com/Yaroslav/AnaeYaroslav)
- * Copyright 2017 - 2017 Yaroslav Santos
- * Licensed under MIT (https://github.com/Yaroslav/AnaeYaroslav/blob/gh-pages/LICENSE)
- */
-
 // jQuery to collapse the navbar on scroll
 function collapseNavbar() {
     if ($(".navbar").offset().top > 50) {
