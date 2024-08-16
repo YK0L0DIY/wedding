@@ -16,5 +16,7 @@
   "reception": "Reception",
   "confirmation": "Attendance confirmation",
   "confirmation_info": "We ask that you confirm your presence with the bride and groom by phone or WhatsApp until December 15th.",
-  "dev_info": "\uD83D\uDCBB  Website developed by Yaroslav Kolodiy!"
+  "dev_info": "\uD83D\uDCBB  Website developed by Yaroslav Kolodiy!",
+  "groom": "Groom",
+  "bride":"Bride"
 }

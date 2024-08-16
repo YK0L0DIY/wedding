@@ -28,7 +28,7 @@ async function changeLanguage(lang) {
 
 // Call updateContent() on page load
 window.addEventListener('DOMContentLoaded', async () => {
-    const userPreferredLanguage = localStorage.getItem('language') || 'en';
+    const userPreferredLanguage = localStorage.getItem('language') || 'pt';
     const langData = await fetchLanguageData(userPreferredLanguage);
     updateContent(langData);
 });
